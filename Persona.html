@@ -4,70 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="persona" content="Mobile-Only User">
-  <title>Example Company | Mobile Ready</title>
+  <title>Example Co. | Fast & Reliable</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    :root { --primary: #007bff; --bg: #ffffff; --text: #222; }
-    body { font-family: -apple-system, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: var(--text); }
+    /* Mobile-First Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; color: #222; padding: 15px; }
     
-    /* Sticky header for constant access */
-    header { background: var(--bg); padding: 15px; border-bottom: 1px solid #ccc; position: sticky; top: 0; z-index: 100; }
+    /* Touch-Friendly Navigation */
+    nav { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
+    nav a { 
+      background: #007bff; color: white; padding: 18px; text-align: center; 
+      text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1rem;
+    }
     
-    /* Horizontal scrollable nav for one-handed thumb use */
-    nav { display: flex; gap: 10px; padding: 10px 15px; overflow-x: auto; background: #f8f9fa; }
-    nav a { padding: 10px 20px; background: #ddd; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.9rem; white-space: nowrap; }
-    nav a:active { background: var(--primary); color: white; }
-
-    main { padding: 15px; }
-    h2 { color: var(--primary); border-left: 4px solid var(--primary); padding-left: 10px; }
+    /* Readable Typography */
+    h1 { font-size: 1.8rem; margin-bottom: 10px; }
+    h2 { font-size: 1.5rem; margin: 25px 0 10px; color: #007bff; }
+    p { margin-bottom: 15px; }
     
-    /* High-contrast, large touch targets */
-    .btn { display: block; padding: 18px; margin: 15px 0; background: var(--primary); color: white; text-align: center; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
-    .btn:active { transform: scale(0.98); background: #0056b3; }
-
-    footer { padding: 20px; text-align: center; color: #888; font-size: 0.8rem; }
+    /* Actionable Contact Area */
+    .cta-button { 
+      display: block; width: 100%; padding: 20px; background: #28a745; 
+      color: white; text-align: center; text-decoration: none; border-radius: 8px; 
+      font-size: 1.2rem; margin-top: 10px; 
+    }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Example Company</h1>
-  </header>
-
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <section id="services">
-      <h2>Services</h2>
-      <p>Streamlined options for your busy schedule:</p>
-      <ul>
-        <li><strong>Service One:</strong> Instant Activation</li>
-        <li><strong>Service Two:</strong> Remote Monitoring</li>
-        <li><strong>Service Three:</strong> Priority Support</li>
-      </ul>
-    </section>
-
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We build mobile-first solutions designed to save you time.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <a href="tel:5551234567" class="btn">Call: 555-123-4567</a>
-      <a href="mailto:info@example.com" class="btn">Email Support</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Example Company</p>
-  </footer>
-
-</body>
-</html>
 
   <header>
     <h1>Example Company</h1>
